@@ -4,6 +4,8 @@ namespace Articles.Domain;
 
 public class Article
 {
+    private const int Limit = 256;
+    
     public Guid Id { get; }
     
     public string Name { get; private set; } 
@@ -25,7 +27,9 @@ public class Article
         DateTime? updatedAt = null)
     {
         Guard.Against.NullOrEmpty(name, nameof(name));
-        Guard.Against.StringTooLong(name, 256, nameof(name));
+        Guard.Against.StringTooLong(name, Limit, nameof(name));
+        Guard.Against.OutOfRange(tags.Count, nameof(tags), 0, Limit, $"Количество тегов должно быть меньше или равно {Limit}");
+        
         Id = id;
         Name = name;
         Tags = tags;
@@ -40,7 +44,7 @@ public class Article
     public void Update(string name, HashSet<Tag> tags, SectionId sectionId)
     {
         Guard.Against.NullOrEmpty(name, nameof(name));
-        Guard.Against.StringTooLong(name, 256, nameof(name));
+        Guard.Against.StringTooLong(name, Limit, nameof(name));
         Name = name;
         Tags = tags;
         SectionId = sectionId;

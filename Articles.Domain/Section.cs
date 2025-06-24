@@ -1,7 +1,11 @@
-﻿namespace Articles.Domain;
+﻿using Ardalis.GuardClauses;
+
+namespace Articles.Domain;
 
 public class Section
 {
+    private const int Limit = 256;
+    
     public SectionId Id { get; }
     
     public string Name { get; } 
@@ -10,6 +14,10 @@ public class Section
     
     private Section(SectionId id, string name, HashSet<Tag> tags)
     {
+        Guard.Against.NullOrEmpty(name, nameof(name));
+        Guard.Against.StringTooLong(name, Limit, nameof(name));
+        Guard.Against.OutOfRange(tags.Count, nameof(tags), 1, Limit, $"Количество тегов должно быть меньше или равно {Limit}");
+        
         Id = id;
         Name = name;
         Tags = tags;
@@ -28,6 +36,6 @@ public class Section
     private static string CreateName(HashSet<Tag> tags)
     {
         var name = TagsConcatenator.Concatenate(tags);
-        return name.Length < 256 ? name : name[..256];
+        return name.Length < Limit ? name : name[..Limit];
     }
 }

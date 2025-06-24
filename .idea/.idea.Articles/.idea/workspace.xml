@@ -9,31 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bbf62e9-92c2-4caa-905e-00257d012606" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Articles/Docker/compose.generated.override.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Api/Infrastructure/ExceptionHandlerExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Api/Models/Responses/ErrorResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Application/Articles/IArticleUnitOfWork.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/UnitOfWorks/ArticleUnitOfWork.cs" afterDir="false" />
+    <list default="true" id="4bbf62e9-92c2-4caa-905e-00257d012606" name="Changes" comment="настройка docker, рефакторинг, добавление uow">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Articles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Articles/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles.Api/Controllers/ArticleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Controllers/ArticleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles.Api/Controllers/SectionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Controllers/SectionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles.Api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles.Api/Mappers/ArticleMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Mappers/ArticleMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles.Api/Mappers/SectionMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Mappers/SectionMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles.Api/Models/Requests/CreateArticleRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Models/Requests/UpdateArticleRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles.Api/Models/Requests/GetSectionsRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Models/Requests/GetSectionsRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles.Api/Models/Responses/ArticleModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Models/Responses/ArticleModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles.Api/Models/Responses/SectionModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Models/Responses/SectionModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles.Application/Articles/ArticleService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Application/Articles/ArticleService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles.Application/ObjectNotFoundException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Application/Exceptions/ObjectNotFoundException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Infrastructure/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Infrastructure/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Repositories/ArticleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Repositories/ArticleRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Repositories/SectionRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Repositories/SectionRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Api/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Domain/Article.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Domain/Article.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Domain/Section.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Domain/Section.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,10 +41,13 @@
     <setting file="mock://C:/work/myproject/Articles/Articles.Api/Controllers/ArticleController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/work/myproject/Articles/Articles.Api/Controllers/ArticleController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/work/myproject/Articles/Articles.Api/Controllers/ArticleController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/work/myproject/Articles/Articles.Api/Mappers/SectionMapper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/work/myproject/Articles/Articles.Api/Models/Requests/GetSectionsRequest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/work/myproject/Articles/Articles.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/work/myproject/Articles/Articles.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/work/myproject/Articles/Articles.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/work/myproject/Articles/Articles.Infrastructure.DataAccess/Infrastructure/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/work/myproject/Articles/Articles.Infrastructure.DataAccess/Repositories/SectionRepository.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
   <component name="KubernetesApiProvider"><![CDATA[{
@@ -106,7 +89,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Docker.compose.yaml: Compose Deployment">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Articles.Api: http">
     <configuration name="Articles.Api: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Articles.Api/Articles.Api.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -250,7 +233,7 @@
       <option name="presentableId" value="Default" />
       <updated>1750589571179</updated>
       <workItem from="1750589574177" duration="14796000" />
-      <workItem from="1750700216459" duration="35802000" />
+      <workItem from="1750700216459" duration="37237000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -260,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750755360960</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="настройка docker, рефакторинг, добавление uow">
+      <option name="closed" value="true" />
+      <created>1750769700054</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750769700055</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +262,39 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="настройка docker, рефакторинг, добавление uow" />
+    <option name="LAST_COMMIT_MESSAGE" value="настройка docker, рефакторинг, добавление uow" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Articles.Domain/Article.cs</url>
+          <line>41</line>
+          <properties documentPath="C:\work\myproject\Articles\Articles.Domain\Article.cs" containingFunctionPresentation="Method 'New'">
+            <startOffsets>
+              <option value="1120" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1190" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Articles.Domain/Article.cs</url>
+          <line>45</line>
+          <properties documentPath="C:\work\myproject\Articles\Articles.Domain\Article.cs" containingFunctionPresentation="Method 'Update'">
+            <startOffsets>
+              <option value="1283" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1329" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
