@@ -1,9 +1,3 @@
 ﻿namespace Articles.Api.Models.Responses;
 
-public class SectionModel
-{
-    public Guid Id { get; set; }
-    public required string Name { get; set; }
-    
-    public IReadOnlyCollection<ArticleModel> Articles { get; set; }
-}
+public record SectionModel(Guid Id, string Name, IReadOnlyCollection<string> Tags, IReadOnlyCollection<ArticleModel> Articles);

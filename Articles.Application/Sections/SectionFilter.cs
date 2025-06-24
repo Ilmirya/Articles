@@ -1,14 +1,8 @@
 ﻿namespace Articles.Application.Sections;
 
-public sealed class SectionFilter
+public sealed class SectionFilter(int startRownum, int rowCount)
 {
-    public int StartRownum { get; }
+    public int StartRownum { get; } = startRownum;
 
-    public int RowCount { get; }
-    
-    public SectionFilter(int startRownum, int rowCount)
-    {
-        StartRownum = startRownum;
-        RowCount = rowCount;
-    }
+    public int RowCount { get; } = rowCount;
 }

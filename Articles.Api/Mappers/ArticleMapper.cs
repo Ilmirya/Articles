@@ -6,12 +6,11 @@ namespace Articles.Api.Mappers;
 internal static class ArticleMapper
 {
     public static ArticleModel Map(DomainArticle source) 
-        => new()
-        {
-            Id = source.Id,
-            Title = source.Name,
-            CreatedAt = source.CreatedAt,
-            UpdatedAt = source.UpdatedAt,
-            Tags = source.Tags.Select(t => t.Value).OrderBy(t => t)
-        };
+        => new(
+            Id: source.Id,
+            Name: source.Name,
+            CreatedAt: source.CreatedAt,
+            UpdatedAt: source.UpdatedAt,
+            Tags: source.Tags.Select(t => t.Value).OrderBy(t => t)
+        );
 }

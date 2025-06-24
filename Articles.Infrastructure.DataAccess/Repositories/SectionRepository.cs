@@ -7,18 +7,11 @@ using DomainSection = Articles.Domain.Section;
 
 namespace Articles.Infrastructure.DataAccess.Repositories;
 
-internal sealed class SectionRepository : ISectionRepository
+internal sealed class SectionRepository(ArticleDbContext context) : ISectionRepository
 {
-    private readonly ArticleDbContext _context;
-
-    public SectionRepository(ArticleDbContext context)
-    {
-        _context = context;
-    }
-
     public async Task<DomainSection?> Find(SectionId sectionId, CancellationToken ct = default)
     {
-        var section = await _context.Sections
+        var section = await context.Sections
             .AsNoTracking()
             .FirstOrDefaultAsync(s => s.Id == sectionId.Value, ct);
         
@@ -29,7 +22,7 @@ internal sealed class SectionRepository : ISectionRepository
 
     public Task<List<DomainSection>> Get(SectionFilter filter, CancellationToken ct = default)
     {
-        return _context.Sections
+        return context.Sections
             .AsNoTracking()
             .Include(s => s.Articles)
             .OrderByDescending(s => s.Articles.Count)
@@ -43,14 +36,14 @@ internal sealed class SectionRepository : ISectionRepository
     {
         var persistenceSection = SectionMapper.Map(section);
 
-        if (await _context.Sections.AnyAsync(e => e.Id == persistenceSection.Id, ct))
+        if (await context.Sections.AnyAsync(e => e.Id == persistenceSection.Id, ct))
         {
-            _context.Sections.Update(persistenceSection);
+            context.Sections.Update(persistenceSection);
         }
         else
         {
-            _context.Sections.Add(persistenceSection);
+            context.Sections.Add(persistenceSection);
         }
-        await _context.SaveChangesAsync(ct);
+        await context.SaveChangesAsync(ct);
     }
 }

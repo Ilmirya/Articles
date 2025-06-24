@@ -9,37 +9,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bbf62e9-92c2-4caa-905e-00257d012606" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Api/Controllers/ArticleController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Api/Controllers/SectionController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Api/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Api/Mappers/ArticleMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Api/Mappers/SectionMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Api/Models/Requests/CreateArticleRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Api/Models/Requests/GetSectionsRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Api/Models/Responses/ArticleModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Api/Models/Responses/SectionModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Application/Articles/ArticleService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Application/Articles/IArticleRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Application/ObjectNotFoundException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Application/Sections/ISectionRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Application/Sections/SectionFilter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Domain/Article.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Domain/Section.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Domain/SectionId.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Domain/Tag.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Domain/TagsConcatenator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Domain/ValueObject.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Article.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Articles.Infrastructure.DataAccess.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/DbContext/ArticleDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Infrastructure/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Mappers/ArticleMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Mappers/SectionMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Repositories/ArticleRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Repositories/SectionRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Section.cs" afterDir="false" />
+    <list default="true" id="4bbf62e9-92c2-4caa-905e-00257d012606" name="Changes" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Articles/Docker/compose.generated.override.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Articles.Api/Infrastructure/ExceptionHandlerExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Articles.Api/Models/Responses/ErrorResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Articles.Application/Articles/IArticleUnitOfWork.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/UnitOfWorks/ArticleUnitOfWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Articles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Articles/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Api/Controllers/ArticleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Controllers/ArticleController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Api/Controllers/SectionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Controllers/SectionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Api/Mappers/ArticleMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Mappers/ArticleMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Api/Mappers/SectionMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Mappers/SectionMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Api/Models/Requests/CreateArticleRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Models/Requests/UpdateArticleRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Api/Models/Requests/GetSectionsRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Models/Requests/GetSectionsRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Api/Models/Responses/ArticleModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Models/Responses/ArticleModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Api/Models/Responses/SectionModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Models/Responses/SectionModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Api/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Application/Articles/ArticleService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Application/Articles/ArticleService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Application/ObjectNotFoundException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Application/Exceptions/ObjectNotFoundException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Infrastructure/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Infrastructure/ServiceCollectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Repositories/ArticleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Repositories/ArticleRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Repositories/SectionRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Repositories/SectionRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Articles.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Articles.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +47,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31dbe07f1fd14994958081443b13244c4e8a0/32/1702060f/StatusCodes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4115c359ec084783bac09ab7de7ff1189800/a6/c5587a3e/GuardClauseExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9d84c715e2b240da95e2850c6b32ae171de8a0/f1/ed45322b/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9ff6fe24f5944b35a381217736eded33290038/0d/e8ffefbf/IndexBuilder`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d3a451850004403293b134b9fe18ce3fc8f920/3a/a920ccf7/IEnumerable`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/20885d5d627d4da82a4a22d7c55abb3d50afdd1ab121738514d59792dc9993/Select.cs" root0="FORCE_HIGHLIGHTING" />
@@ -62,7 +58,18 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/833fed97c32dcc2a12cff14db306fc3d225158ec7cb267e39ebd896c0ba9a54/GuardAgainstOutOfRangeExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ce37be1a06b16c6faa02038d2cc477dd3bca5b217ceeb41c5f2ad45c1bf9/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d5b2136a6ba2708bd1524889498ba798cfd91226a584468c1bf4d588e4c29b1b/NotFoundException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/work/myproject/Articles/Articles.Api/Controllers/ArticleController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/work/myproject/Articles/Articles.Api/Controllers/ArticleController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/work/myproject/Articles/Articles.Api/Controllers/ArticleController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/work/myproject/Articles/Articles.Api/Models/Requests/GetSectionsRequest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/work/myproject/Articles/Articles.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/work/myproject/Articles/Articles.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/work/myproject/Articles/Articles.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -78,6 +85,11 @@
   "keyToString": {
     ".NET Launch Settings Profile.Articles.Api: IIS Express.executor": "Debug",
     ".NET Launch Settings Profile.Articles.Api: http.executor": "Debug",
+    "Docker.Articles.Api/Dockerfile.executor": "Debug",
+    "Docker.Articles.Api/compose.yaml: Compose Deployment.executor": "Debug",
+    "Docker.compose.yaml.articles.api: Compose Deployment.executor": "Run",
+    "Docker.compose.yaml.postgres: Compose Deployment.executor": "Run",
+    "Docker.compose.yaml: Compose Deployment.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
@@ -87,9 +99,14 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "yaml"
+    ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.Articles.Api: http">
+  <component name="RunManager" selected="Docker.compose.yaml: Compose Deployment">
     <configuration name="Articles.Api: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Articles.Api/Articles.Api.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -156,6 +173,15 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Articles.Api/compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="Articles.Api/compose.yaml" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -179,6 +205,41 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
+    <configuration name="compose.yaml.articles.api: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="articles.api" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="compose.yaml" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="compose.yaml.postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="postgres" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="compose.yaml" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.compose.yaml.postgres: Compose Deployment" />
+        <item itemvalue="Docker.compose.yaml.articles.api: Compose Deployment" />
+        <item itemvalue="Docker.Articles.Api/compose.yaml: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -189,8 +250,17 @@
       <option name="presentableId" value="Default" />
       <updated>1750589571179</updated>
       <workItem from="1750589574177" duration="14796000" />
-      <workItem from="1750700216459" duration="22726000" />
+      <workItem from="1750700216459" duration="35802000" />
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1750755360960</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1750755360960</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,206 +270,7 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Articles.Application/Articles/ArticleService.cs</url>
-          <line>22</line>
-          <properties documentPath="C:\work\myproject\Articles\Articles.Application\Articles\ArticleService.cs" containingFunctionPresentation="Method 'Create'">
-            <startOffsets>
-              <option value="672" />
-            </startOffsets>
-            <endOffsets>
-              <option value="721" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Articles.Application/Articles/ArticleService.cs</url>
-          <line>37</line>
-          <properties documentPath="C:\work\myproject\Articles\Articles.Application\Articles\ArticleService.cs" containingFunctionPresentation="Method 'Update'">
-            <startOffsets>
-              <option value="1225" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1274" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Articles.Application/Articles/ArticleService.cs</url>
-          <line>32</line>
-          <properties documentPath="C:\work\myproject\Articles\Articles.Application\Articles\ArticleService.cs" containingFunctionPresentation="Method 'Update'">
-            <startOffsets>
-              <option value="1002" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1054" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Articles.Application/Articles/ArticleService.cs</url>
-          <line>54</line>
-          <properties documentPath="C:\work\myproject\Articles\Articles.Application\Articles\ArticleService.cs" containingFunctionPresentation="Method 'GetOrCreateSection'">
-            <startOffsets>
-              <option value="1770" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1785" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Articles.Application/Articles/ArticleService.cs</url>
-          <line>52</line>
-          <properties documentPath="C:\work\myproject\Articles\Articles.Application\Articles\ArticleService.cs" containingFunctionPresentation="Method 'GetOrCreateSection'">
-            <startOffsets>
-              <option value="1709" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1752" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Articles.Application/Articles/ArticleService.cs</url>
-          <line>51</line>
-          <properties documentPath="C:\work\myproject\Articles\Articles.Application\Articles\ArticleService.cs" containingFunctionPresentation="Method 'GetOrCreateSection'">
-            <startOffsets>
-              <option value="1672" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1700" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Articles.Application/Articles/ArticleService.cs</url>
-          <line>38</line>
-          <properties documentPath="C:\work\myproject\Articles\Articles.Application\Articles\ArticleService.cs" containingFunctionPresentation="Method 'Update'">
-            <startOffsets>
-              <option value="1283" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1322" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Articles.Application/Articles/ArticleService.cs</url>
-          <line>40</line>
-          <properties documentPath="C:\work\myproject\Articles\Articles.Application\Articles\ArticleService.cs" containingFunctionPresentation="Method 'Update'">
-            <startOffsets>
-              <option value="1340" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1383" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Articles.Application/Articles/ArticleService.cs</url>
-          <line>23</line>
-          <properties documentPath="C:\work\myproject\Articles\Articles.Application\Articles\ArticleService.cs" containingFunctionPresentation="Method 'Create'">
-            <startOffsets>
-              <option value="730" />
-            </startOffsets>
-            <endOffsets>
-              <option value="780" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Articles.Application/Articles/ArticleService.cs</url>
-          <line>25</line>
-          <properties documentPath="C:\work\myproject\Articles\Articles.Application\Articles\ArticleService.cs" containingFunctionPresentation="Method 'Create'">
-            <startOffsets>
-              <option value="798" />
-            </startOffsets>
-            <endOffsets>
-              <option value="841" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Articles.Application/Articles/ArticleService.cs</url>
-          <line>27</line>
-          <properties documentPath="C:\work\myproject\Articles\Articles.Application\Articles\ArticleService.cs" containingFunctionPresentation="Method 'Create'">
-            <startOffsets>
-              <option value="859" />
-            </startOffsets>
-            <endOffsets>
-              <option value="877" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Articles.Api/Controllers/ArticleController.cs</url>
-          <line>59</line>
-          <properties documentPath="C:\work\myproject\Articles\Articles.Api\Controllers\ArticleController.cs" containingFunctionPresentation="Method 'Create'">
-            <startOffsets>
-              <option value="1766" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1825" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Articles.Infrastructure.DataAccess/Repositories/ArticleRepository.cs</url>
-          <line>35</line>
-          <properties documentPath="C:\work\myproject\Articles\Articles.Infrastructure.DataAccess\Repositories\ArticleRepository.cs" containingFunctionPresentation="Method 'Save'">
-            <startOffsets>
-              <option value="1225" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1277" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Articles.Api/Controllers/ArticleController.cs</url>
-          <line>64</line>
-          <properties documentPath="C:\work\myproject\Articles\Articles.Api\Controllers\ArticleController.cs" containingFunctionPresentation="Method 'Create'">
-            <startOffsets>
-              <option value="1996" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2026" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Articles.Api/Controllers/ArticleController.cs</url>
-          <line>68</line>
-          <properties documentPath="C:\work\myproject\Articles\Articles.Api\Controllers\ArticleController.cs" containingFunctionPresentation="Method 'Create'">
-            <startOffsets>
-              <option value="2088" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2135" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
   </component>
 </project>

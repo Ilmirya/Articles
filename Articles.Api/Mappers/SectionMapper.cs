@@ -6,11 +6,10 @@ using DomainArticle = Domain.Article;
 
 internal static class SectionMapper
 {
-    public static SectionModel Map(DomainSection section, List<DomainArticle> articles) 
-        => new()
-        {
-            Id = section.Id.Value,
-            Name = section.Name,
-            Articles = articles.Select(ArticleMapper.Map).ToList()
-        };
+    public static SectionModel Map(DomainSection section, List<DomainArticle> articles)
+        => new(
+            section.Id.Value,
+            section.Name, 
+            section.Tags.Select(x => x.Value).ToList(), 
+            articles.Select(ArticleMapper.Map).ToList());
 }

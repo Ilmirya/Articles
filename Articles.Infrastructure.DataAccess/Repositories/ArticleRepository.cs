@@ -7,15 +7,11 @@ using DomainArticle = Articles.Domain.Article;
 
 namespace Articles.Infrastructure.DataAccess.Repositories;
 
-internal sealed class ArticleRepository : IArticleRepository
+internal sealed class ArticleRepository(ArticleDbContext context) : IArticleRepository
 {
-    private readonly ArticleDbContext _context;
-
-    public ArticleRepository(ArticleDbContext context) => _context = context;
-
     public async Task<DomainArticle?> Find(Guid id, CancellationToken ct)
     {
-        var article =  await _context.Articles
+        var article =  await context.Articles
             .AsNoTracking()
             .FirstOrDefaultAsync(a => a.Id == id, cancellationToken: ct);
         
@@ -25,7 +21,7 @@ internal sealed class ArticleRepository : IArticleRepository
     }
 
     public Task<List<DomainArticle>> Get(SectionId sectionId, CancellationToken ct) 
-        => _context.Articles
+        => context.Articles
             .AsNoTracking()
             .Where(x => x.SectionId == sectionId.Value)
             .Select(x => ArticleMapper.Map(x))
@@ -35,14 +31,14 @@ internal sealed class ArticleRepository : IArticleRepository
     {
         var persistenceArticle = ArticleMapper.Map(article);
 
-        if (await _context.Articles.AnyAsync(e => e.Id == persistenceArticle.Id, ct))
+        if (await context.Articles.AnyAsync(e => e.Id == persistenceArticle.Id, ct))
         {
-            _context.Articles.Update(persistenceArticle);
+            context.Articles.Update(persistenceArticle);
         }
         else
         {
-            _context.Articles.Add(persistenceArticle);
+            context.Articles.Add(persistenceArticle);
         }
-        await _context.SaveChangesAsync(ct);
+        await context.SaveChangesAsync(ct);
     }
 }

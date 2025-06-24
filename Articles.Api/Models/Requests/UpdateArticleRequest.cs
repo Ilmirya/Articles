@@ -2,7 +2,7 @@
 
 namespace Articles.Api.Models.Requests;
 
-public class CreateArticleRequest
+public class UpdateArticleRequest
 {
     [Required]
     [MaxLength(256)]

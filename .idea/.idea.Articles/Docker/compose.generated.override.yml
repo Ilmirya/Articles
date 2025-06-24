@@ -1,0 +1,21 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  articles.api:
+    build:
+      context: "C:\\work\\myproject\\Articles"
+      dockerfile: "Articles.Api/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Articles.Api.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "articles.api:dev"
+    ports: []
+    volumes:
+    - "C:\\work\\myproject\\Articles\\Articles.Api:/app:rw"
+    - "C:\\work\\myproject\\Articles:/src:rw"
+    - "C:\\Users\\yantu\\.nuget\\packages:/root/.nuget/packages"
+    working_dir: "/app"
